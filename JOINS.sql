@@ -69,7 +69,7 @@ SELECT * FROM `who_placed_the_most_expensive_order`;
 
 SELECT * FROM `order_line`;
     SELECT 
-        , SUM(`price`) `total_price`
+        *, SUM(`price`) `total_price`
     FROM
         `order_line` `ol`
             JOIN
